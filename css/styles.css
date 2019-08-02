@@ -36,3 +36,18 @@ nav ul li {
   font-size: 1.20em;
   padding-top:9px;
 }
+
+.home{
+  background-image: url("../image/pizza1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:900px;
+  font-size:3em;
+  opacity: 0.7;
+}
+
+#hword{
+  color:white;
+  text-align: center;
+  padding-top:300px;
+}
