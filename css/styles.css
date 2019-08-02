@@ -88,5 +88,13 @@ p{
   background-color: #686868;
   height:700px;
 
+}
 
+form{
+  width:80%;
+}
+
+order{
+  text-align: center;
+  justify-content:center;
 }
