@@ -38,11 +38,12 @@ nav ul li {
 }
 
 .home{
-  background-image: url("../image/pizza1.jpeg");
+  /* background-image: url("../image/pizza1.jpeg"); */
   background-size: cover;
+  background-color:gray;
   background-repeat: no-repeat;
   height:900px;
-  font-size:3em;
+  
   opacity: 0.7;
 }
 
@@ -50,4 +51,33 @@ nav ul li {
   color:white;
   text-align: center;
   padding-top:300px;
+}
+
+button{
+  /* background-color:  */
+  color:black;
+}
+
+#Menu{
+  height:700px;
+  margin-top:100px;
+  text-align: center;
+}
+
+img{
+  width:60%;
+  height:200px;
+  border-radius:50%;
+}
+
+h1{
+  margin-bottom: 90px;
+
+}
+
+p{
+  font-size: 1.2em; 
+  text-align:center;
+  margin-left: 60px;
+  margin-bottom: 50px;
 }
