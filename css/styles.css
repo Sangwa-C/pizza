@@ -1,0 +1,38 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+}
+img{
+height:65px;
+width:150px;
+margin-left: 90px;
+/* margin-top: 5px; */
+/* margin-bottom: 3px; */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111110;
+  /* height:70px; */
+  color:#DFDFDD;
+  text-decoration: none;
+}
+nav ul li {
+  height:70px;
+  font-size: 1.20em;
+  padding-top:9px;
+}
