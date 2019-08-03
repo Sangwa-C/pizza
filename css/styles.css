@@ -9,12 +9,12 @@ ul {
 li {
   float: right;
 }
-img{
-height:65px;
-width:150px;
-margin-left: 90px;
-/* margin-top: 5px; */
-/* margin-bottom: 3px; */
+.logo{
+  height:65px;
+  width:150px;
+  margin-left: 90px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 3px; */
 }
 
 li a {
@@ -74,7 +74,9 @@ img{
 
 h1{
   margin-bottom: 90px;
+  margin-top: 60px;
   text-align: center;
+  color:white;
 }
 
 p{
@@ -86,15 +88,22 @@ p{
 
 #order{
   background-color: #686868;
-  height:700px;
-
+  height:950px;
+  justify-content:center;
+  font-size: 1.25em;
+  border-radius: 50px;
 }
+
 
 form{
   width:80%;
+  margin-left:50px
 }
-
-order{
-  text-align: center;
-  justify-content:center;
+#oda{
+  margin-left:250px; 
+  margin-top:70px; 
+  border-radius: 15px;
+  border-color: #686868;
+  height:45px;
+  width:70px;
 }

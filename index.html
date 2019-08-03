@@ -25,7 +25,7 @@
       <li><a href="#contact">Order</a></li>
       <li><a href="#Menu">Menu</a></li>
       <li><a class="active" href="#home">Home</a></li>
-      <li style="float:left" > <img src="image/logo2.png"></li>
+      <li style="float:left; border-radius: 15px" > <img src="image/logo2.png" class="logo"></li>
     </ul>
   </nav>
 
@@ -35,7 +35,7 @@
     <div id="hword">
         <h style="font-size:3em;">Welcome to</h>
         <p style="font-size:3em;">Chelsea's Pizza</p>
-        <button>View Menu</button>
+        <button> <a href="#Menu">View Menu</a> </button>
     </div>
   </div>
   <!--end of home-->
@@ -93,64 +93,67 @@
   
   <div id="order" class="container">
     <h1>Place your order :)</h1>
-    <div class="well" style="  margin-left:100px;margin-right:100px;">
-      <p1>Choose size!</p1><br>
+    <div class="well" style="margin-left:200px;margin-right:200px; padding-top: 70px; height: 700px">
+      
       <form>
-          <select>
-              <option value="small">Small </option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-          </select><br><br>
-          <p1>Select the crust you desire!</p1><br>
-          <select>
-              <option value="Crispy">Crispy</option>
-              <option value="Stuffed">Stuffed</option>
-              <option value="Gluten-free">Gluten-free</option>  
-          </select><br><br>
+        <p1>Choose size!</p1><br>
+        <select>
+            <option value="small">Small </option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+        <p1>Select the crust you desire!</p1><br>
+        <select>
+          <option value="Crispy">Crispy</option>
+          <option value="Stuffed">Stuffed</option>
+          <option value="Gluten-free">Gluten-free</option>  
+        </select><br><br>
     
-          <p1>Select the toppings</p1>
-          <div class="row">
-              <div class="col-sm-6">
-                  <input type="radio" name="toppings" value="Pepperoni"> Pepperoni<br>
-                  <input type="radio" name="toppings" value="Mushrooms"> Mushrooms<br>
-                  <input type="radio" name="toppings" value="Onions"> Onions<br>  
-                  <input type="radio" name="toppings" value="Green peppers"> Green peppers<br> 
-                </div>
-          
-                <div class="col-sm-6">
-                  <input type="radio" name="toppings" value="Sausage"> Sausage<br>
-                  <input type="radio" name="toppings" value="Bacon"> Bacon<br>
-                  <input type="radio" name="toppings" value="Extra cheese"> Extra cheese<br>
-                  <input type="radio" name="toppings" value="Black olives"> Black olives<br><br>
-                </div>
+        <p1>Select the toppings</p1>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="radio" name="toppings" value="Pepperoni"> Pepperoni<br>
+            <input type="radio" name="toppings" value="Mushrooms"> Mushrooms<br>
+            <input type="radio" name="toppings" value="Onions"> Onions<br>  
+            <input type="radio" name="toppings" value="Green peppers"> Green peppers<br> 
           </div>
           
-    
-          <p1>Please selet the number pizza do you need</p1><br>
-          <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="2">3</option>
-            <option value="2">4</option>
-            <option value="2">5</option>
-            <option value="2">6</option>
-            <option value="2">7</option>
-            <option value="2">8</option>
-            <option value="2">9</option>
-            <option value="2">10</option>
-            <option value="2">11</option>
-            <option value="2">12</option>
-            <option value="2">13</option>
-            <option value="2">14</option>
-            <option value="2">15</option>
-            <option value="2">2</option>
-          </select><br><br>
-
-          <button name="order" type="submit" >Order</button>
+          <div class="col-sm-6">
+            <input type="radio" name="toppings" value="Sausage"> Sausage<br>
+            <input type="radio" name="toppings" value="Bacon"> Bacon<br>
+            <input type="radio" name="toppings" value="Extra cheese"> Extra cheese<br>
+            <input type="radio" name="toppings" value="Black olives"> Black olives<br><br>
+          </div>
         </div>
-      </div>
-    </form>
-      
+          
+    
+        <p1>Please selet the number pizza do you need</p1><br>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+          <option value="2">5</option>
+          <option value="2">6</option>
+          <option value="2">7</option>
+          <option value="2">8</option>
+          <option value="2">9</option>
+          <option value="2">10</option>
+          <option value="2">11</option>  
+          <option value="2">12</option>
+          <option value="2">13</option>
+          <option value="2">14</option>
+          <option value="2">15</option>
+          <option value="2">2</option>
+        </select><br>
 
+        <p1>Would you like pizza delivered </p1><br>
+        <input type="radio" name="yes" value="yes">Yes<br>
+        <input type="radio" name="no" value="no">No<br><br>
+
+        <button onclick="order()" name="order" id="oda" type="submit" >Order</button>
+      </div>
+    </div>
+  </form>
 </body>
 </html>
