@@ -92,25 +92,25 @@
   <!--end of our menu-->
   
   <div id="order" class="container">
-    <h1>Place your order :)</h1>
+    <h1 style="color:white;">Place your order :)</h1>
     <div class="well" style="margin-left:200px;margin-right:200px; padding-top: 70px; height: 700px">
       
       <form>
         <p1>Choose size!</p1><br>
-        <select>
+        <select id="size" class="size">
             <option value="small">Small </option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select><br><br>
         <p1>Select the crust you desire!</p1><br>
-        <select>
+        <select id="crust">
           <option value="Crispy">Crispy</option>
           <option value="Stuffed">Stuffed</option>
           <option value="Gluten-free">Gluten-free</option>  
         </select><br><br>
     
         <p1>Select the toppings</p1>
-        <div class="row">
+        <div class="row" id="topping" class="topping">
           <div class="col-sm-6">
             <input type="radio" name="toppings" value="Pepperoni"> Pepperoni<br>
             <input type="radio" name="toppings" value="Mushrooms"> Mushrooms<br>
@@ -128,7 +128,7 @@
           
     
         <p1>Please selet the number pizza do you need</p1><br>
-        <select>
+        <select id="number" class="number" >
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="2">3</option>
@@ -148,12 +148,14 @@
         </select><br>
 
         <p1>Would you like pizza delivered </p1><br>
-        <input type="radio" name="yes" value="yes">Yes<br>
-        <input type="radio" name="no" value="no">No<br><br>
+        <input type="radio" name="yes" class="deliver" value="yes">Yes<br>
+        <input type="radio" name="no" class="deliver"   value="no">No<br><br>
 
         <button onclick="order()" name="order" id="oda" type="submit" >Order</button>
-      </div>
+      </form>
+      <p id="sample"></p>
     </div>
-  </form>
+  </div>
+  
 </body>
 </html>
