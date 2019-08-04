@@ -73,9 +73,9 @@ $(document).ready(function() {
     // }
     var newPizza= new Order (inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
     var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)
-    // var totalMoney = pizzaMoney*("select#number")
+    var totalMoney = pizzaMoney * inputtedNumber
 
-    $("div#sample").append("<p>" + "The charge will be " + pizzaMoney + " $"+ "</p>");
+    $("div#sample").append("<p>" + "The charge will be " +totalMoney + " $"+ "</p>");
     console.log(pizzaMoney);
 
     $("div#sample").append("<p>" + newPizza.pizza() + "</p>");
