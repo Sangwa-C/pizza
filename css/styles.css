@@ -141,7 +141,6 @@ form{
 
 .footer {
   position: relative;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
@@ -149,4 +148,5 @@ form{
   text-align: center;
   height:70px;
   padding-top: 20px;
+  font-size: 1.2em;
 }
