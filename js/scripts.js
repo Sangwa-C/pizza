@@ -31,10 +31,17 @@ $(document).ready(function() {
     console.log(newPizza);
     });
 
-  $("button#delivery").click (function(){
-    
-  });
+  
 
   });
 });
- 
+
+
+$(document).ready(function() {
+  $("#delivery").click (function(){
+    
+    $("#address").show();
+    alert("your order will be delivered to your location. let us know your location!")
+  });
+});
+
