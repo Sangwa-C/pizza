@@ -7,7 +7,7 @@ This webpage is for chelsea's Pizza. It is a webpage  that allows you to order a
 * Connect to the internet
 * Open your browser
 * In your browser adress bar type the following
-* https://sangwa-c.github.io/delani-studio/.
+* 
 * then you will directly be on their page
 
 ## BDD
@@ -54,6 +54,6 @@ This webpage is not suitable for all screen sizes.
 * JAVASCRIPT
 
 ## Support and contact details
-If you any issues or have questions, ideas or concerns contact us on any of our page, or write for us on this E-mail: chelseasabinesangwa@gmail.com
+If you any issues or have questions, ideas or concerns contact us on any of our page, or write for us on this E-mail: chelseasabinesangwa@gmail.com .
 ### License
 MIT Copyright (c) 2019 Sangwa Sabine Chelsea. # Chelsea'S Pizza. 
