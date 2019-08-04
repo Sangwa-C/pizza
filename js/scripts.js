@@ -32,15 +32,7 @@ $(document).ready(function() {
     });
 
   $("button#delivery").click (function(){
-    $("ul#kaki").append('<div class="address">'+'<div class="group">' +
-                              '<label for="street">Street</label>' +
-                              '<input type="text" class="street">' +
-                            '</div>' +
-                            '<div class="group">' +
-                              '<label for="city">City</label>' +
-                              '<input type="text" class="city">' +
-                            '</div>'+
-                          '</div>');
+    
   });
 
   });

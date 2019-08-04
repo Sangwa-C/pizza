@@ -36,7 +36,7 @@
       <!-- <h style="font-size:3em;">Welcome to</h> -->
       <!-- <p style="font-size:3em;">Chelsea's Pizza</p> -->
       <h style="font-size:5em;">Grab a Quick Slice</h><br><br><br><br>
-      <button class="btn"><a href="#Menu" style="color:rgb(100, 8, 8);">View Our Menu</a> </button>
+      <button class="btn" id="btn"><a href="#Menu" style="color:rgb(100, 8, 8);">View Our Menu</a> </button>
     </div>
   </div>
   <!--end of home-->
@@ -99,7 +99,7 @@
         <div class="col-sm-6" >
           <form id="form">
             <p1>Choose size!</p1><br>
-            <select id="size">
+            <select required id="size">
               <option></option>
               <option value="small">Small </option>
               <option value="medium">Medium</option>
@@ -107,7 +107,7 @@
             </select><br><br>
 
             <p1>Select the crust you desire!</p1><br>
-            <select id="crust">
+            <select required   id="crust">
               <option></option>
               <option value="Crispy">Crispy</option>
               <option value="Stuffed">Stuffed</option>
@@ -115,7 +115,7 @@
             </select><br><br>
               
             <p1>Select the toppings</p1><br>
-              <select id="topping"><br>
+              <select required  id="topping"><br>
               <option></option>
               <option name="toppings" value="Pepperoni">Pepperoni</option>
               <option name="toppings" value="Mushrooms" >Mushrooms</option>
@@ -128,7 +128,7 @@
             </select><br><br>
 
             <p1>Please selet the number pizza do you need</p1><br>
-            <select id="number">
+            <select required   id="number">
               <option></option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -151,14 +151,24 @@
           </form>
           </div>
           <div class="col-sm-6">
-            <p1>If you want your order to be delivered click</p1>
-            <button type="submit" id="delivery" class="btn btn-warning">Delivery</button>
+            <p1>If you want your order to be delivered click</p1><br><br>
+            <button type="submit" id="delivery" class="btn btn-warning" style="margin-left:100px;">Delivery</button><br><br>
             <ul id="sample">
 
             </ul>
-            <ul id="kaki"> 
 
-            </ul>
+            <div class="address">
+              <p1>Enter your location</p1><br><br>
+              <div class="group">
+                <label for="street">Street</label>
+                <input type="text" class="street"><br><br>
+                
+              </div>
+              <div class="group">
+                <label for="city">City</label>
+                <input type="text" class="city">
+              </div>
+            </div>
           </div>
         </div>
       </div>
