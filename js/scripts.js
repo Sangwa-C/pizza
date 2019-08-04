@@ -9,14 +9,14 @@ Order.prototype.pizza=function(){
   return this.size+ " , " + this.crust + " , " + this.topping  
 }
 
+
+
 // user interface logic
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
+
   $("#oda").click (function(){
-
-console.log("hhhhhhhhhhhhhh");
-
 
     var inputtedSize=$("select#size").val();
     console.log("inputtedSize");
@@ -30,28 +30,19 @@ console.log("hhhhhhhhhhhhhh");
     $("ul#sample").append("<li><span>" + newPizza.pizza() + "<li><span>");
     console.log(newPizza);
     });
+
+  $("button#delivery").click (function(){
+    $("ul#kaki").append('<div class="address">'+'<div class="group">' +
+                              '<label for="street">Street</label>' +
+                              '<input type="text" class="street">' +
+                            '</div>' +
+                            '<div class="group">' +
+                              '<label for="city">City</label>' +
+                              '<input type="text" class="city">' +
+                            '</div>'+
+                          '</div>');
+  });
+
   });
 });
-
-// // business logic
-// function Contact(first, last) {
-//   this.firstName = first;
-//   this.lastName = last;
-// }
-
-// // user interface logic
-// $(document).ready(function() {
-//   $("form#new-contact").submit(function(event) {
-//     event.preventDefault();
-
-//     var inputtedFirstName = $("input#new-first-name").val();
-//     var inputtedLastName = $("input#new-last-name").val();
-
-//     var newContact = new Contact(inputtedFirstName, inputtedLastName);
-
-//     $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
-
-//     $("input#new-first-name").val("");
-//     $("input#new-last-name").val("");
-//   });
-// }); 
+ 

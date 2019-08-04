@@ -38,26 +38,20 @@ nav ul li {
 }
 
 .home{
-  /* background-image: url("../image/pizza1.jpeg"); */
+  background-image: url("https://image.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg");
   background-size: cover;
-  background-color:gray;
   background-repeat: no-repeat;
   height:900px;
-  
-  opacity: 0.7;
 }
 
 #hword{
   color:white;
   text-align: center;
   padding-top:300px;
+  margin-left:400px;
 
 }
 
-button{
-  /* background-color:  */
-  color:black;
-}
 
 #Menu{
   height:900px;
@@ -100,7 +94,7 @@ form{
   margin-left:50px
 }
 #oda{
-  margin-left:250px; 
+  margin-left:125px; 
   margin-top:70px; 
   border-radius: 15px;
   border-color: #686868;
