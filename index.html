@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="css/styles.css">
   <Script src="js/jquery-3.4.1.js"></Script>
   <script src="js/scripts.js"></script>
@@ -95,40 +95,37 @@
     <h1 style="color:white;">Place your order :)</h1>
     <div class="well" style="margin-left:200px;margin-right:200px; padding-top: 70px; height: 700px">
       
-      <form>
+      <form id="form">
         <p1>Choose size!</p1><br>
-        <select id="size" class="size">
+        <select id="size">
             <option value="small">Small </option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select><br><br>
         <p1>Select the crust you desire!</p1><br>
         <select id="crust">
+            <option></option>
           <option value="Crispy">Crispy</option>
           <option value="Stuffed">Stuffed</option>
           <option value="Gluten-free">Gluten-free</option>  
         </select><br><br>
     
-        <p1>Select the toppings</p1>
-        <div class="row" id="topping" class="topping">
-          <div class="col-sm-6">
-            <input type="radio" name="toppings" value="Pepperoni"> Pepperoni<br>
-            <input type="radio" name="toppings" value="Mushrooms"> Mushrooms<br>
-            <input type="radio" name="toppings" value="Onions"> Onions<br>  
-            <input type="radio" name="toppings" value="Green peppers"> Green peppers<br> 
-          </div>
+        <p1>Select the toppings</p1><br>
+        <select id="topping"><br>
+          <option></option>
+          <option name="toppings" value="Pepperoni">Pepperoni</option>
+          <option name="toppings" value="Mushrooms" >Mushrooms</option>
+          <option name="toppings" value="Onions">Onions</option>
+          <option name="toppings" value="Green peppers" >Green peppers</option>
+          <option name="toppings" value="Sausage">Sausage</option>
+          <option name="toppings" value="Bacon">Bacon</option>
+          <option name="toppings" value="Extra cheese">Extra cheese</option>
+          <option name="toppings" value="Black olives">Black olives</option>
           
-          <div class="col-sm-6">
-            <input type="radio" name="toppings" value="Sausage"> Sausage<br>
-            <input type="radio" name="toppings" value="Bacon"> Bacon<br>
-            <input type="radio" name="toppings" value="Extra cheese"> Extra cheese<br>
-            <input type="radio" name="toppings" value="Black olives"> Black olives<br><br>
-          </div>
-        </div>
-          
-    
+        </select><br><br>
         <p1>Please selet the number pizza do you need</p1><br>
-        <select id="number" class="number" >
+        <select id="number">
+          <option></option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="2">3</option>
@@ -144,16 +141,16 @@
           <option value="2">13</option>
           <option value="2">14</option>
           <option value="2">15</option>
-          <option value="2">2</option>
-        </select><br>
+        </select><br><br>
 
-        <p1>Would you like pizza delivered </p1><br>
-        <input type="radio" name="yes" class="deliver" value="yes">Yes<br>
-        <input type="radio" name="no" class="deliver"   value="no">No<br><br>
 
-        <button onclick="order()" name="order" id="oda" type="submit" >Order</button>
+        <button name="order" id="oda" type="submit" >Order</button>
       </form>
-      <p id="sample"></p>
+      <p >
+        <ul id="sample">
+
+        </ul>
+      </p>
     </div>
   </div>
   

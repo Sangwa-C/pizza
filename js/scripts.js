@@ -1,22 +1,57 @@
 // business logic
-function order (size, crust, topping, number, deliver){
+function Order(size, crust, topping){
   this.size= size;
   this.crust=crust;
   this.topping= topping;
-  this.number=number;
-  this.deviler= deliver;
 }
 
-order.prototype.pizza=function(){
-  return this.size+ " , " + this.crust + " , " + this.topping + " , " + this.number;
+Order.prototype.pizza=function(){
+  return this.size+ " , " + this.crust + " , " + this.topping  
 }
 
 // user interface logic
 $(document).ready(function() {
-  var inputtedSize=$("inputted#size").val();
-  var inputtedCrust=$("inputted#crust").val();
-  var inputtedtopping=$("inputted#topping").val();
-  var inputtedNUmber=$("inputted#number").val();
-  var newPizza= new order (inputtedSize,inputtedCrust,inputtedtopping,inputtedNUmber);
-$("p#sample").append("<p>" + newPizza.pizza() + "</p>");
+  $("form#form").submit(function(event) {
+    event.preventDefault();
+  $("#oda").click (function(){
+
+console.log("hhhhhhhhhhhhhh");
+
+
+    var inputtedSize=$("select#size").val();
+    console.log("inputtedSize");
+    var inputtedCrust=$("select#crust").val();
+    console.log("inputtedCrust");
+    var inputtedTopping=$("select#topping").val();
+    console.log("inputtedTopping");
+
+    var newPizza= new Order (inputtedSize, inputtedCrust, inputtedTopping);
+
+    $("ul#sample").append("<li><span>" + newPizza.pizza() + "<li><span>");
+    console.log(newPizza);
+    });
+  });
 });
+
+// // business logic
+// function Contact(first, last) {
+//   this.firstName = first;
+//   this.lastName = last;
+// }
+
+// // user interface logic
+// $(document).ready(function() {
+//   $("form#new-contact").submit(function(event) {
+//     event.preventDefault();
+
+//     var inputtedFirstName = $("input#new-first-name").val();
+//     var inputtedLastName = $("input#new-last-name").val();
+
+//     var newContact = new Contact(inputtedFirstName, inputtedLastName);
+
+//     $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
+
+//     $("input#new-first-name").val("");
+//     $("input#new-last-name").val("");
+//   });
+// }); 
