@@ -1,7 +1,7 @@
 #### By **Sangwa Sabine Chelsea**
 
 ## Description
-This webpage is for chelsea's Pizza. It is a webpage  that allows you to order a pizza and you can also ask for delivery!
+This webpage is for Chelsea's Pizza. It is a webpage  that allows you to order a pizza and you can also ask for delivery!
 
 ## Setup/Installation Requirements
 * Connect to the internet
