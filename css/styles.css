@@ -129,3 +129,12 @@ form{
 #address{
   display:none;
 }
+
+#bobo{
+  margin-top:120px;
+  margin-left:125px;
+  border-radius: 15px;
+  border-color: #686868;
+  height:45px;
+  width:70px;
+}

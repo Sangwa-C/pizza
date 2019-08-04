@@ -45,3 +45,10 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $("#bobo").click (function(){
+    
+    $("#order").clear();
+  });
+})
+
