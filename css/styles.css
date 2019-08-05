@@ -60,7 +60,7 @@ nav ul li {
   margin-bottom: 100px;
 }
 
-img{
+.img{
   width:60%;
   height:200px;
   border-radius:50%;
@@ -85,7 +85,11 @@ p{
   margin-bottom: 50px;
 }
 
-
+.img:hover{
+  width:220px;
+  height:220px;
+  opacity:0.7;
+}
 
 #order{
   background-image: url("https://image.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg");
