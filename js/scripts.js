@@ -98,7 +98,18 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#bobo").click (function(){
-    alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day")
-  });
-})
+if ( street!==" " || city!==" "){
+    alert("Please enter your location");
+  } else{
+    alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day");
+  };
+});
+  var street = document.getElementbyclass("street").val();
+  var city = document.getElementbyclass("city").val();
 
+  
+});
+
+
+// function calculator(form){
+// var date = document.getElementById("date").value;
