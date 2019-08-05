@@ -6,7 +6,7 @@ This webpage is for Chelsea's Pizza. It is a webpage  that allows you to order a
 ## Setup/Installation Requirements
 * Connect to the internet
 * Open your browser
-* In your browser adress bar type the following
+* In your browser address bar type the following
 * https://sangwa-c.github.io/pizza/
 * then you will directly be on their page
 
