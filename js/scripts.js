@@ -98,8 +98,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#bobo").click (function(){
-    
-    $("#order").clear();
+    alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day")
   });
 })
 
