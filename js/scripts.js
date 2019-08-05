@@ -89,26 +89,27 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $("#delivery").click (function(){            
-
-    $("#address").show();
+  $("#delivery").click (function(){    
+    
     alert("your order will be delivered to your location. let us know your location!")
+    prompt("Please enter your location (the street and city");
+    alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day");
+
+
+    // $("#address").show();
+    // 
   });
 });
 
-$(document).ready(function() {
-  $("#bobo").click (function(){
-if ( street!==" " || city!==" "){
-    alert("Please enter your location");
-  } else{
-    alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day");
-  };
-});
-  var street = document.getElementbyclass("street").val();
-  var city = document.getElementbyclass("city").val();
+// $(document).ready(function() {
+//   $("#bobo").click (function(){
 
-  
-});
+//  promty("Please enter your location (the street and city");
+
+//   alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day");
+ 
+// })
+// });
 
 
 // function calculator(form){
