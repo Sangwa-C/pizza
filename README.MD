@@ -40,7 +40,7 @@ This webpage is for Chelsea's Pizza. It is a webpage  that allows you to order a
 
     Output Example: The charge will be 14 $.      
 
-    Output Example: Your Order: Pizza size is small, crust chosen is Crispy, with Pepperoni, the quantity is 2.
+    Output Example: Your Order: Pizza size is small, crust chosen is Crispy, with Pepperoni, the quantity the quantity ordered is 2.
 
 
 
