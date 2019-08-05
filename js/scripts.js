@@ -7,7 +7,7 @@ function Order(size, crust, topping, number){
 }
 
 Order.prototype.pizza=function(){
-  return "Your Order: Pizza size is " + this.size+ ", crust chosen is " + this.crust + ", with " + this.topping + ", the quantity is " + this.number
+  return "Your Order: Pizza size is " + this.size+ ", crust chosen is " + this.crust + ", with " + this.topping + ", the quantity ordered is " + this.number
 }
 
 
@@ -65,6 +65,8 @@ $(document).ready(function() {
     } else {
       alert("Please refresh and re-order")
     }
+
+
     
     var inputtedNumber=$("select#number").val();
     console.log(inputtedNumber);
@@ -74,15 +76,21 @@ $(document).ready(function() {
     var newPizza= new Order (inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
     var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)
     var totalMoney = pizzaMoney * inputtedNumber
-
+    var total = totalMoney + 2 
+  
     $("div#sample").append("<p1>" + newPizza.pizza() + "</p1><br>");
     console.log(newPizza);
 
-    $("div#sample").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1>");
+    $("div#sample").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1><br>");
     console.log(pizzaMoney);
-    
+
+    $("#delivery").click (function(){
+      $("div#sample").append("<p1>" + "The total to be paid is " + total+ " $"+ "</p1>");
+    console.log(total);
+    });
 
     });
+
 
   
 
